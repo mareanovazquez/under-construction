@@ -1,77 +1,89 @@
+html {
+    font-size: 16px;
+}
+
 body {
     background: #eeee;
+    font-family: "Sora", sans-serif;
 }
 
 .principal {
-    height: 100vh;
+    height: 90vh;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: #155263;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-wrap: wrap;
-    color: black
+    color: #eeee;
 }
 
-.principal h1 {
-    font-family: 'popins', sans-serif;
+.principal__title {
     font-weight: 800;
-    font-size: 30px;
+    font-size: 2rem;
 }
 
-.principal h2 {
-    margin-top: 30px;
+.principal__subtitle {
+    margin-top: -40px;
+
 }
 
-.principal h2 span {
+.brand {
     font-size: 40px;
-    font-family: 'azonix', sans-serif;
-    border-bottom-width: 4px;
-    border-bottom-style: solid;
-    border-bottom-color: #ba0c2f;
+    font-family: "Raleway", sans-serif;
 }
 
-.principal h4 {
-    font-size: 16px;
-    font-weight: 700;
-    color: grey;
-    letter-spacing: 10px;
+.slogan {
+    font-family: "Sora", sans-serif;
+    letter-spacing: 3px;
 }
 
-.principal h3 {
-    font-family: 'nunito', sans-serif;
-    font-size: 25px;
-    line-height: 0.6;
+.contacto {
+    background-color: #fed049;
+    border-radius: 20px;
+    color: #eeee;
 }
 
-
-.contacto nav ul li i {
-    color: white;
-    font-size: 40px;
-}
-
-/*Pantalla celular*/
-@media only screen and (min-width: 320px) {
-
+.social-media__links{
+    font-size: 1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
     
 }
 
-
-/*Pantalla tablet*/
-@media only screen and (min-width: 576px) and (max-width: 767px) {}
-.principal h1 {
-    font-size: 40px;
+.social-media__link{
+    color: pink;
 }
-/*Pantalla notebook*/
-@media only screen and (min-width: 768px) {
-    .principal h1 {
-        font-size: 55px;
+
+/* MEDIUM | Entre 768px y 991px 
+ */
+/* Bootstrap breakpoints MD y superiores */
+@media (min-width: 768px) {
+
+    .principal__title {
+        font-size: 2.3rem;
     }
 }
 
-/*Pantalla Desktop*/
-@media only screen and (min-width: 992px) {
-    .principal h1 {
-        font-size: 80px;
+/* LARGE | Entre 992px y 1199px
+ */
+/* Bootstrap breakpoints LG y superiores */
+@media (min-width: 992px) {
+
+    /* Tus estilos para dispositivos large y superiores van aquí */
+    .principal__title {
+        font-size: 4rem;
     }
 }
+
+
+
+
+
