@@ -8,7 +8,7 @@ body {
 }
 
 .principal {
-    height: 90vh;
+    height: 80vh;
     width: 85%;
     margin-left: auto;
     margin-right: auto;
@@ -45,21 +45,49 @@ body {
 }
 
 .contacto {
+    position: relative; /* Cambia a 'absolute' si quieres que se posicione en relación a su contenedor más cercano con 'position: relative' */
     background-color: #fed049;
     border-radius: 20px;
-    color: #eeee;
+    width: 25%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    /* Posicionamiento deseado */
+    top: -50px; /* Ajusta este valor según la distancia que quieras subir el contenedor */
+    right: -20%; /* Ajusta este valor para desplazar el contenedor hacia la derecha */
 }
 
 .social-media__links{
     font-size: 1rem;
-    list-style: none;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     
 }
 
-.social-media__link{
-    color: pink;
+.social-media__link i{
+    color:#155263 ;
+}
+
+.firma {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    color: #155263;
+    }
+
+.firma__link {
+    text-decoration: none;
+    font-weight: 800;
+    color: #155263;
+    }
+
+.firma__link:hover {
+    color: red;
+    transition: 0.3s;
 }
 
 /* MEDIUM | Entre 768px y 991px 
