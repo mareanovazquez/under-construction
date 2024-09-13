@@ -10,10 +10,7 @@ body {
 .principal {
     height: 80vh;
     width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px auto;
     border-radius: 20px;
     background-color: #155263;
     display: flex;
@@ -32,19 +29,21 @@ body {
 .principal__subtitle {
     font-size: 1rem;
     font-family: "Raleway", sans-serif;
+    opacity: 0.7;
 }
 
 .brand__container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    flex-direction: column;
 }
 
 .brand__container div {
     margin-top: -30px;
 }
+
 .brand__isotipo {
     width: 40%;
 }
@@ -58,24 +57,20 @@ body {
     font-family: "Sora", sans-serif;
     letter-spacing: 3px;
     margin-top: -40px;
+    color: #fed049;
+    font-size: 1.3rem;
 }
 
 .contacto {
     position: relative;
-    /* Cambia a 'absolute' si quieres que se posicione en relación a su contenedor más cercano con 'position: relative' */
     background-color: #fed049;
     border-radius: 20px;
     width: 35%;
     margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-    /* Posicionamiento deseado */
     top: -50px;
-    /* Ajusta este valor según la distancia que quieras subir el contenedor */
     right: -20%;
-    /* Ajusta este valor para desplazar el contenedor hacia la derecha */
 }
 
 .social-media__links {
@@ -85,7 +80,6 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .social-media__link i {
@@ -109,42 +103,17 @@ body {
     transition: 0.3s;
 }
 
-/* MEDIUM | Entre 768px y 991px 
- */
-/* Bootstrap breakpoints MD y superiores */
+/* Media Queries */
+/* MEDIUM | Entre 768px y 991px */
 @media (min-width: 768px) {
-
     .principal__title {
         font-size: 2.3rem;
     }
 }
 
-/* LARGE | Entre 992px y 1199px
- */
-/* Bootstrap breakpoints LG y superiores */
+/* LARGE | Entre 992px y 1199px */
 @media (min-width: 992px) {
-
-    /* Tus estilos para dispositivos large y superiores van aquí */
-
-    .principal {
-        height: 80vh;
-        width: 85%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border-radius: 20px;
-        background-color: #155263;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: #eeee;
-    }
-
     .principal__title {
-        font-weight: 800;
         font-size: 4rem;
     }
 
@@ -154,74 +123,18 @@ body {
     }
 
     .brand__container {
-        display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
     }
-    
+
     .brand__isotipo {
         width: 20%;
     }
-    
-    .brand {
-        font-size: 3rem;
-        font-family: "Raleway", sans-serif;
-    }
-    
-    .slogan {
-        font-family: "Sora", sans-serif;
-        letter-spacing: 3px;
-        margin-top: -40px;
-    }
 
     .contacto {
-        position: relative;
-        /* Cambia a 'absolute' si quieres que se posicione en relación a su contenedor más cercano con 'position: relative' */
-        background-color: #fed049;
-        border-radius: 20px;
         width: 25%;
-        margin: 0 auto;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
-        /* Posicionamiento deseado */
-        top: -50px;
-        /* Ajusta este valor según la distancia que quieras subir el contenedor */
-        right: -20%;
-        /* Ajusta este valor para desplazar el contenedor hacia la derecha */
     }
-    
+
     .social-media__links {
         font-size: 1rem;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    
-    }
-    
-    .social-media__link i {
-        color: #155263;
-    }
-    
-    .firma {
-        text-align: center;
-        font-family: "Raleway", sans-serif;
-        color: #155263;
-    }
-    
-    .firma__link {
-        text-decoration: none;
-        font-weight: 800;
-        color: #155263;
-    }
-    
-    .firma__link:hover {
-        color: red;
-        transition: 0.3s;
     }
 }
